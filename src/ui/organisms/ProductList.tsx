@@ -7,17 +7,22 @@ function ProductList() {
   ];
 
   return (
-    <div className="grid-rows-4 h-80">
-      <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
-        <div className="bg-white p-4 shadow">
-          <ul data-testid="products-list">
-            {products.map((product) => (
-              <li key={product.id}>{product.name}</li>
-            ))}
-          </ul>
+    <section className="bg-white">
+      <div className="grid-rows-4 h-80">
+        <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+          <div className="bg-white p-4 shadow">
+            <ul
+              className="grid grid-cols-1 lg:grid-cols-4 xl:gap-x-8"
+              data-testid="products-list"
+            >
+              {products.map((product) => (
+                <li key={product.id}>{product.name}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
