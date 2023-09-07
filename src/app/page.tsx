@@ -1,6 +1,5 @@
 import HeaderText from "@/ui/atoms/HeaderText";
 import ProductList from "@/ui/organisms/ProductList";
-import Image from "next/image";
 
 export default function Home() {
   return (
